@@ -9,17 +9,17 @@ import ArticlePage from './pages/ArticlePage'
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-      <NavBar />
-      <div id="page-body">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/articles" element={<ArticlesListPage />} />
-          <Route path="/articles/:articleId" element={<ArticlePage />} />
-        </Routes>
+      <div className="App">
+        <NavBar />
+        <div id="page-body">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/articles" element={<ArticlesListPage />} />
+            <Route path="/articles/:articleId" element={<ArticlePage />} />
+          </Routes>
+        </div>
       </div>
-    </div>
     </BrowserRouter>
   )
 }
